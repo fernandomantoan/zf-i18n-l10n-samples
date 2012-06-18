@@ -1,0 +1,21 @@
+<?php $locale = Zend_Registry::get('Zend_Locale'); ?>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <h1><?php echo $this->translate("Titulo da Pagina"); ?></h1>
+
+        <ul>
+            <li><a href="<?php echo $this->url(array('lang' => 'pt')); ?>">pt</a></li>
+            <li><a href="<?php echo $this->url(array('lang' => 'en')); ?>">en</a></li>
+            <li><a href="<?php echo $this->url(array('lang' => 'es')); ?>">es</a></li>
+        </ul>
+
+        <p><?php echo $this->translate("Texto Internacionalizado de Exemplo"); ?></p>
+        <p><?php echo $this->translate("A data atual é: %1\$s", new Zend_Date()); ?>
+        <p><?php echo $this->translate("O valor monetário do locale é:"); ?> <?php echo new Zend_Currency(); ?></p>
+        <p><?php echo $this->translate("O locale de tradução é:"); ?> <?php echo $this->translate()->getLocale(); ?></p>
+        <p><?php echo $this->translate("O Zend_Locale é:"); ?> <?php echo $locale; ?></p>
+    </body>
+</html>
