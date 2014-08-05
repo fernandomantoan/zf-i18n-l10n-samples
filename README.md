@@ -1,5 +1,4 @@
 # Zend Framework - Internationalization and Localization Samples
-====================
 
 This project was created to store and show samples of the Zend Framework Internationalization and Localization article. It has some samples of how to use **Zend_Locale** and **Zend_Translate** as standalone components and how to integrate them in a Zend Framework MVC application.
 
