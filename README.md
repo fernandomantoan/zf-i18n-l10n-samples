@@ -9,7 +9,7 @@ The permalink to the article is: [http://fernandomantoan.com/frameworks/zend-fra
 
 ## Standalone
 
-These samples located in the **standalone-samples** folder use the **Zend_Translate** and **Zend_Locale** as standalone classes.
+The samples located in the **standalone-samples** folder use the **Zend_Translate** and **Zend_Locale** as standalone classes.
 
 The **Zend_Locale** samples show how to create and use the class within locale-aware components, and if the example is runned in a cli the **try catch** block will catch a **Zend_Locale_Exception**, showing how to work with an automatic locale detection failure.
 
